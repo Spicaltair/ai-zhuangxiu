@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>提交装修需求 - A❤️装修</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background: #f0f4f8;
+      margin: 0; padding: 2rem;
+    }
+    .form-container {
+      background: white;
+      max-width: 500px;
+      margin: auto;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+    h2 {
+      text-align: center;
+      color: #3366cc;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.6rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+    .checkbox {
+      display: flex;
+      align-items: center;
+      margin-top: 1rem;
+    }
+    .checkbox input {
+      width: auto;
+      margin-right: 0.5rem;
+    }
+    button {
+      margin-top: 2rem;
+      width: 100%;
+      padding: 0.8rem;
+      font-size: 1.1rem;
+      background: #3366cc;
+      color: white;
+      border: none;
+      border-radius: 8px;
+    }
+    button:hover {
+      background: #264c9c;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>📝 提交装修需求</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST" onsubmit="window.location.href='thanks.html'; return false;">
+      <label>房屋面积（㎡）</label>
+      <input type="text" name="area" required />
+
+      <label>房型</label>
+      <select name="layout" required>
+        <option value="">请选择</option>
+        <option value="一室一厅">一室一厅</option>
+        <option value="两室一厅">两室一厅</option>
+        <option value="三室两厅">三室两厅</option>
+        <option value="复式/别墅">复式 / 别墅</option>
+      </select>
+
+      <label>装修风格偏好</label>
+      <select name="style">
+        <option value="">不确定</option>
+        <option value="极简">极简</option>
+        <option value="北欧">北欧</option>
+        <option value="原木">原木</option>
+        <option value="轻奢">轻奢</option>
+        <option value="现代">现代</option>
+      </select>
+
+      <label>所在城市</label>
+      <input type="text" name="city" />
+
+      <label>希望开始装修时间</label>
+      <select name="time">
+        <option value="尽快">尽快</option>
+        <option value="1个月内">1个月内</option>
+        <option value="3个月内">3个月内</option>
+        <option value="暂不确定">暂不确定</option>
+      </select>
+
+      <label>其他说明</label>
+      <textarea name="notes" placeholder="你对空间的特殊需求、想要改造的地方..."></textarea>
+
+      <div class="checkbox">
+        <input type="checkbox" name="wants_coupon" value="yes">
+        <label style="margin: 0;">我愿意提供装修照片，换取免费或9.9元体验</label>
+      </div>
+
+      <label>联系方式（微信号或手机号）</label>
+      <input type="text" name="contact" required />
+
+      <button type="submit">提交并领取设计建议</button>
+    </form>
+  </div>
+</body>
+</html>
