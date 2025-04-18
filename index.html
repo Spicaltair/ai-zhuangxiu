@@ -1,14 +1,95 @@
+
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-<script defer data-domain="zhuangxiu.love" src="https://plausible.io/js/script.file-downloads.outbound-links.revenue.tagged-events.js"></script>
-<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AI装修</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI装修 · 上传户型获取设计方案</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Helvetica Neue", sans-serif;
+      background: #e0e0e0 url('gray_texture_bg.jpg') repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+    }
+    .logo {
+      margin-top: 30px;
+      font-size: 28px;
+      font-weight: bold;
+      color: white;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px 20px;
+      border-radius: 12px;
+    }
+    .container {
+      max-width: 700px;
+      padding: 40px 20px;
+      background: rgba(255, 255, 255, 0.95);
+      margin-top: 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    h1 {
+      font-size: 26px;
+      margin-bottom: 12px;
+    }
+    p {
+      font-size: 15px;
+      color: #444;
+      margin-top: 0;
+    }
+    .cta-grid {
+      margin-top: 28px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+    }
+    .btn {
+      flex: 1 1 40%;
+      min-width: 160px;
+      padding: 14px 20px;
+      background: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: background 0.2s ease;
+    }
+    .btn:hover {
+      background: #111;
+    }
+    .qrcode {
+      margin-top: 36px;
+    }
+    img {
+      width: 120px;
+      border-radius: 12px;
+    }
+  </style>
 </head>
 <body>
-  <h1>欢迎来到AI装修</h1>
+  <div class="logo">A❤️装修</div>
+  <div class="container">
+    <h1>上传你的装修户型图，获取AI设计初稿</h1>
+    <p>我们将为你提供初步风格图与区域报价建议，仅需几秒提交。</p>
+    <div class="cta-grid">
+      <a class="btn" href="upload.html">上传户型图</a>
+      <a class="btn" href="coupon.html">领取优惠券</a>
+      <a class="btn" href="gallery.html">看看别人上传的</a>
+      <a class="btn" href="about.html">关于AI装修</a>
+    </div>
+    <div class="qrcode">
+      <p style="margin-top: 30px;">添加客服微信获取返图支持：</p>
+      <img src="qrcode.png" alt="微信二维码">
+    </div>
+  </div>
 </body>
 </html>
