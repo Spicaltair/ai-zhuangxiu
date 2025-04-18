@@ -2,46 +2,78 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>领取优惠 - A❤️装修</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>提交成功 · 添加微信领取AI设计</title>
   <style>
     body {
-      font-family: 'Helvetica Neue', sans-serif;
-      background: #f2f4f8;
       margin: 0;
-      padding: 2rem;
+      padding: 0;
+      font-family: "Helvetica Neue", sans-serif;
+      background: #f4f6f8;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
     }
     .container {
       max-width: 600px;
-      margin: auto;
       background: white;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      margin-top: 60px;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
       text-align: center;
     }
-    h2 {
-      color: #3366cc;
+    h1 {
+      font-size: 24px;
+      margin-bottom: 16px;
+      color: #222;
     }
-    .qrcode {
-      margin-top: 2rem;
+    p {
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 12px;
     }
-    .tip {
-      margin-top: 1rem;
-      color: #666;
-      font-size: 0.95rem;
+    .qr {
+      margin: 20px auto;
+    }
+    .qr img {
+      width: 140px;
+      border-radius: 12px;
+    }
+    .cta {
+      margin-top: 24px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 22px;
+      font-size: 15px;
+      background: #0066ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.2s ease;
+    }
+    .btn:hover {
+      background: #004ab3;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h2>🎉 恭喜！你已获得 ¥9.9 优惠体验资格</h2>
-    <p>扫码下方二维码即可付款体验 👇</p>
-    <div class="qrcode">
-      <img src="wechat_qr.png" alt="微信扫码支付" width="240">
+    <h1>✅ 提交成功！</h1>
+    <p>我们已经收到你的户型图和需求。</p>
+    <p>请添加客服微信，获取你的专属 AI 设计方案：</p>
+    <div class="qr">
+      <img src="qrcode.png" alt="微信二维码">
     </div>
-    <p class="tip">付款后请添加客服微信备注【晒图优惠】</p>
+    <p style="font-size:13px;color:#999;">添加微信后请备注“AI装修”</p>
+    <div class="cta">
+      <a class="btn" href="index.html">返回首页</a>
+      &nbsp;
+      <a class="btn" href="pay.html">继续下单设计</a>
+    </div>
   </div>
 </body>
 </html>

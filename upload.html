@@ -3,41 +3,63 @@
 <html lang="zh">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>我要晒图 - A❤️装修</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>上传户型图 · AI装修下单</title>
   <style>
     body {
-      font-family: 'Helvetica Neue', sans-serif;
+      font-family: "Helvetica Neue", sans-serif;
+      background: #f5f5f5;
       margin: 0;
       padding: 0;
-      background: #f4f6f9;
-      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     .container {
-      max-width: 680px;
-      margin: 2rem auto;
-      background: #fff;
-      padding: 2rem;
+      margin-top: 60px;
+      background: white;
+      padding: 30px;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
     }
-    h2 {
-      color: #3366cc;
-      margin-bottom: 1rem;
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
     }
     iframe {
       width: 100%;
-      height: 1000px;
+      height: 580px;
       border: none;
-      margin-top: 1rem;
+      border-radius: 12px;
+    }
+    .cta {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #0066ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: background 0.2s ease;
+    }
+    .btn:hover {
+      background: #004fc1;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h2>🖼️ 上传你的装修照片，领取 ¥9.9 优惠体验！</h2>
-    <p>填写以下表单并同意公开与训练使用，即可获取优惠通道。</p>
-    <iframe src="https://noteforms.com/forms/ai-dtjgtz" title="晒图投稿表单"></iframe>
+    <h1>上传户型图并填写设计需求</h1>
+    <iframe src="https://noteforms.com/forms/ai-dtjgtz" title="AI装修提交表单"></iframe>
+    <div class="cta">
+      <a class="btn" href="pay.html">🧾 19.9元下单AI设计方案</a>
+    </div>
   </div>
 </body>
 </html>

@@ -1,13 +1,76 @@
+
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-<script defer data-domain="zhuangxiu.love" src="https://plausible.io/js/script.file-downloads.outbound-links.revenue.tagged-events.js"></script>
-<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-
-  <meta charset="UTF-8">
-  <title>支付页面</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>19.9元AI装修设计下单页</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Helvetica Neue", sans-serif;
+      background: #f3f4f6;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+    .container {
+      background: white;
+      margin-top: 40px;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 640px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+    h1 {
+      color: #111;
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+    p {
+      color: #555;
+      font-size: 15px;
+    }
+    .section {
+      margin-top: 24px;
+    }
+    .qr-box img {
+      width: 160px;
+      margin: 10px auto;
+      display: block;
+      border-radius: 12px;
+    }
+    .form-box {
+      margin-top: 20px;
+      text-align: left;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      height: 500px;
+      border-radius: 12px;
+    }
+  </style>
 </head>
 <body>
-  <h2>请扫码支付</h2>
+  <div class="container">
+    <h1>19.9元下单AI装修设计服务</h1>
+    <p>上传你的户型图，填写需求，完成支付后我们将为你提供：</p>
+    <p>✅ 1 套 AI 风格初步设计图<br>✅ 本地化报价建议<br>✅ 专属客服返图</p>
+
+    <div class="section qr-box">
+      <p><strong>👇 微信扫码付款 19.9 元</strong></p>
+      <img src="qrcode.png" alt="微信收款码">
+      <p style="font-size:13px;color:#999;">支付后请填写下方表单</p>
+    </div>
+
+    <div class="section form-box">
+      <p><strong>📥 提交户型与需求信息：</strong></p>
+      <iframe src="https://noteforms.com/forms/ai-dtjgtz" title="AI户型提交表单"></iframe>
+    </div>
+  </div>
 </body>
 </html>
